@@ -1,0 +1,73 @@
+/*This is my css that i usee */
+@import url('https://fonts.googleapis.com/css2?family-Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+    background-image: url(https://img.freepik.com/free-vector/realistic-colorful-galaxy-background_23-2148965681.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    background-color: rgb(223, 110, 238);
+    position: absolute;
+    top: 0;
+    left: 1;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+nav {
+    margin-left: 50%;
+}
+
+.logo {
+    font-size: 2cm;
+    color: #031d1d;
+    pointer-events: 0;
+    
+}
+
+.navigation a {
+    text-decoration: none;
+    color: indigo;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 1 20px;
+    font-weight: 600;
+}
+
+.navigation a:hover {
+    background: rgb(100, 218, 233);
+    color: aliceblue;
+}
+
+.star Rail {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+#text {
+    position: absolute;
+    font-size: 1cm;
+    color: rgb(17, 62, 139);
+}
+
+video {
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family-Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://t3.ftcdn.net/jpg/04/75/87/40/360_F_475874091_qHXQj8hJnRqzeNGJa26xYtzXMfHc1h0Z.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    height: 2000px;
+    scroll-behavior: smooth;
+    
+}
+
+.wrapper {
+  display: flex;
+  max-width: 650px;
+  width: 100%;
+  height: 400px;
+  background: #fff;
+  align-items: center;
+  justify-content: flex;
+  position: relative;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  gap: 10px;
+  margin-left: 340px;
+  margin-top: 100px;
+}
+
+.wrapper i.button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 36px;
+  width: 36px;
+  background-color: #343f4f;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 36px;
+  color: #fff;
+  font-size: 15px;
+  transition: all 0.3s linear;
+  z-index: 100;
+  cursor: pointer;
+}
+
+i.button:active {
+  transform: scale(0.94) translateY(-50%);
+}
+
+i#previous {
+  left: 25px;
+}
+i#next {
+  right: 25px;
+}
+.image-container {
+  height: 320px;
+  max-width: 500px;
+  width: 100%;
+  overflow: hidden;
+}
+.image-container .carousel {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s ease;
+}
+.carousel img {
+  height: 100%;
+  width: 100%;
+  border-radius: 18px;
+  border: 10px solid #fff;
+  object-fit: cover;
+}
+
+header {
+  background-color: rgb(231, 123, 183);
+  position: absolute;
+  top: 0;
+  left: 1;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+h1 {
+  color: rgb(224, 104, 224);
+}
+
+p {
+  color: #fff;
+}
+
+h2 {
+  color: rgb(123, 255, 255);
+}
+
+.slider-frame{
+  overflow: hidden;
+  height: 800px;
+  width: 1200px;
+  margin-left: 360px;
+  margin-top: 20px;
+}
+
+@keyframes slide_animation{
+      0% {left:0px;}
+      10% {left:0px;}
+      20% {left:1200px;}
+      30% {left:1200px;}
+      40% {left: 2400px;}
+      50% {left: 2400px;}
+      60% {left: 1200px;}
+      70% {left: 1200px;}
+      80% {left: 0px;}
+      90% {left: 0px;}
+      100% {left:0px;}
+  }
+ 
+  @-webkit-keyframes slide_animation{
+      0% {left:0px;}
+      10% {left:0px;}
+      20% {left:1200px;}
+      30% {left:1200px;}
+      40% {left: 2400px;}
+      50% {left: 2400px;}
+      60% {left: 1200px;}
+      70% {left: 1200px;}
+      80% {left: 0px;}
+      90% {left: 0px;}
+      100% {left:0px;}
+  }
+ 
+  .slide-images{
+      width: 3600px;
+      height: 800px;
+      margin: 0 0 0 -2400px;
+      position: relative;
+      -webkit-animation-name: slide_animation;
+      animation-name: slide_animation;
+      -webkit-animation-duration: 33s;
+      animation-duration: 33s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-direction: alternate;
+      animation-direction: alternate;
+      -webkit-animation-play-state: running;
+      animation-play-state: running;
+  }
+ 
+  .img-container{
+      height: 800px;
+      width: 1200px;
+      position: relative;
+      float: left;
+      margin-left: 160px;
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+
+  main {
+    width: 900px;
+    height: 1500px;
+    padding: 20px;
+    margin: 40px;
+  }
+
+  div{
+    color: rgb(224, 162, 255);
+  }
+
+  .navigation a:hover {
+    background: rgb(55, 3, 114);
+    color: aliceblue;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: rgb(0, 255, 115);
+  padding: 6px 15px;
+  border-radius: 20px;
+  margin: 1 20px;
+  font-weight: 600;
+}

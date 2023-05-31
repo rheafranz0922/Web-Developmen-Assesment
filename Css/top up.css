@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family-Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://i.pinimg.com/originals/b2/6f/9b/b26f9b3d2559f83c832fdc822c3edba5.gif);
+    background-size: cover;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    height: 2000px;
+    scroll-behavior: smooth;
+    
+}
+
+iframe {
+    margin-left: 70px;
+    margin-top: 99px;
+}
